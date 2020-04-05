@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Image Resizer</span>
+        </nav>
+    </header>
+    <container class="container">
+        <div>
+            <div class="uploadNav">
+                <input type="file" id="fileUpload" class="btn btn-primary" />
+                <input type="button" value="Upload" class="btn btn-primary" onclick="Upload()" />
+            </div>
+            <canvas style="margin: 0px auto; width: auto; height: 500px; display: none;" id="outputCanvas" width="500"
+                height="500"></canvas>
+        </div>
+        <div id="convertedImg" style="display: none;">
+            <div class="banner">
+                <a id="horizontal" class='butn butn__new' download="myImage.jpg" href=""
+                    onclick="handleClick(this ,755, 450)">
+                    <span>755 X 450</span>
+                </a>
+            </div>
+            <div class="banner">
+                <a id="horizontal" class='butn butn__new' download="myImage.jpg" href=""
+                    onclick="handleClick(this ,365, 450)">
+                    <span>755 X 450</span>
+                </a>
+            </div>
+            <div class="banner">
+                <a id="horizontal" class='butn butn__new' download="myImage.jpg" href=""
+                    onclick="handleClick(this ,365, 212)">
+                    <span>755 X 450</span>
+                </a>
+            </div>
+            <div class="banner">
+                <a id="horizontal" class='butn butn__new' download="myImage.jpg" href=""
+                    onclick="handleClick(this ,380, 380)">
+                    <span>755 X 450</span>
+                </a>
+            </div>
+        </div>
+    </container>
+    <footer id="foo">
+        <div class="btn btn-primary" onclick="location.reload();">
+            Hard Reset
+        </div>
+        <div class="btn btn-primary" onclick="reSet();">
+            Reset
+        </div>
+    </footer>
+</body>
+
+</html>
